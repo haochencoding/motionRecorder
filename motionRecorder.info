@@ -1,0 +1,6 @@
+{
+    "id":"recorder",
+    "name":"Motion Recorder",
+    "src":"motionRecorder.app.js",
+    "icon":"motionRecorder.img"
+}
