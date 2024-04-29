@@ -1,7 +1,9 @@
-This repository contains the code for motionRecorder application on Bangle JS2. 
+# Introduction
+This repository hosts the source code for motionRecorder application on Bangle.js 2 smartwatch. This app records and logs motion data at a frequence of 50 times per seconds, using both the accelerometer and the compass sensor.
 
-This application records the data from both accelerator sensor and compass sensor once per 0.1 seconds.
+For installation, simply upload `motionRecorder.info`, `motionRecorder.img`, and `motionRecorder.app.js` onto the Bangle.js device. 
 
+# References: 
 Guide on Bangle JS2 Sensor API: 
 - Bangle.getAccel(): http://www.espruino.com/ReferenceBANGLEJS2#l_Bangle_getAccel
 - Bangle.getCompass(): http://www.espruino.com/ReferenceBANGLEJS2#l_Bangle_getCompass
