@@ -7,7 +7,7 @@ let recordStatus = false; // Variable to track recording state
 const csvFile = 'motionData.csv';
 const file = require("Storage").open(csvFile, "a");
 let recordInterval; // Interval variable to manage data recording
-const frequency = 100; // 1 data record per 100 milisecond 
+const frequency = 20; // 1 data record per 20 milisecond 
 
 // Function for read and write sensor data
 const writeData = function() {
