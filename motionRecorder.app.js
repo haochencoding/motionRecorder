@@ -14,14 +14,14 @@ const writeData = function() {
   timestamp = Date.now(); // Get timestamp
   var accel = Bangle.getAccel(); //Get accelerator data
   var comp = Bangle.getCompass(); //Get compass data
-  file.write(timestamp + ", " + accel.x + ", " + accel.y + ", " + accel.z + ", " + accel.mag + ", " + accel.diff + ", " + comp.x + ", " + comp.y + ", " + comp.z + ", " + comp.dx + ", " + comp.dy + ", " + comp.dz + ", " + comp.heading + "\n");
+  file.write(timestamp + "," + accel.x + "," + accel.y + "," + accel.z + "," + accel.mag + "," + accel.diff + "," + comp.x + "," + comp.y + "," + comp.z + "," + comp.dx + "," + comp.dy + "," + comp.dz + "," + comp.heading + "\n");
 };
 
 // Function for start recording data
 const startMotionRecord = function(){
   Bangle.setCompassPower(1); // Activate compass sensor
   // Write Headers
-  file.write("timestamp, accel.x, accel.y, accel.z, accel.mag, accel.diff, comp.x, comp.y, comp.z, comp.dx, comp.dy, comp.dz, comp.heading\n");
+  file.write("timestamp,accel.x,accel.y,accel.z,accel.mag,accel.diff,comp.x,comp.y,comp.z,comp.dx,comp.dy,comp.dz,comp.heading\n");
   // Set up intervals for data recording
   recordInterval = setInterval(writeData, frequency);
 };
